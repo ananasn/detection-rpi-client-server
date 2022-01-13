@@ -8,7 +8,7 @@ Group=www-data
 WorkingDirectory=/home/pi/detection-rpi-client-server
 
 Restart=on-failure
-ExecStart=/home/pi/detection-rpi-client-server/start-voice.sh
+ExecStart=/home/pi/detection-rpi-client-server/start-vosk.sh
 
 [Install]
 WantedBy=multi-user.target

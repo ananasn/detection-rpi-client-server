@@ -1,0 +1,14 @@
+[Unit]
+Description=voice detection daemon
+After=network.target vosk.service
+Requires=vosk.service
+
+[Service]
+User=pi
+Group=www-data
+WorkingDirectory=/home/pi/detection-rpi-client-server
+Restart=on-failure
+ExecStart=/home/pi/detection-rpi-client-server/start-vosk-midleware.sh
+
+[Install]
+WantedBy=multi-user.target
